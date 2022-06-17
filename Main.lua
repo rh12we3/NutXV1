@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local Verify = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -503,6 +498,9 @@ TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Hyotinhofofinho/s1mple/main/LIXO"))()
+end)
 
 TextButton_2.Parent = MainFrame
 TextButton_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
@@ -510,11 +508,14 @@ TextButton_2.BackgroundTransparency = 1.000
 TextButton_2.Position = UDim2.new(0.050185591, 0, 0.524776995, 0)
 TextButton_2.Size = UDim2.new(0, 133, 0, 53)
 TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "RayX"
+TextButton_2.Text = "Reduce lag"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
 TextButton_2.TextWrapped = true
+TextButton_2.MouseButton1Down:Connect(function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/angeloX041/reduce-lag/main/ReduceLagByG_87",true))()
+end)
 
 TextButton_3.Parent = MainFrame
 TextButton_3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
@@ -522,11 +523,14 @@ TextButton_3.BackgroundTransparency = 1.000
 TextButton_3.Position = UDim2.new(0.611011684, 0, 0.524776995, 0)
 TextButton_3.Size = UDim2.new(0, 133, 0, 53)
 TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = "SwagMode"
+TextButton_3.Text = "ESP"
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.TextScaled = true
 TextButton_3.TextSize = 14.000
 TextButton_3.TextWrapped = true
+TextButton_3.MouseButton1Down:Connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY", true))()
+end)
 
 TextButton_4.Parent = MainFrame
 TextButton_4.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
@@ -539,6 +543,9 @@ TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_4.TextScaled = true
 TextButton_4.TextSize = 14.000
 TextButton_4.TextWrapped = true
+TextButton_4.MouseButton1Down:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/angeloX041/Speedc/main/SuperSpeedC ", true))()
+end)
 
 MiscFrame.Name = "MiscFrame"
 MiscFrame.Parent = main
@@ -570,6 +577,11 @@ TextButton_5.Font = Enum.Font.SourceSans
 TextButton_5.Text = ""
 TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_5.TextSize = 14.000
+TextButton_5.MouseButton1Down:Connect(function()
+    NutHUBv2.Color3.fromRGB(255, 0, 0)
+    SideFrame.Color3.fromRGB(255, 0, 0)
+    Main.Color3.fromRGB(255, 0, 0)
+end)
 
 TextButton_6.Parent = Themes
 TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 234, 255)
@@ -697,6 +709,13 @@ TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_8.TextScaled = true
 TextButton_8.TextSize = 14.000
 TextButton_8.TextWrapped = true
+TextButton_8.MouseButton1Down:Connect(function()
+   HomeFrame.Visible = true
+   Credits.Visible = false
+   MainFrame.Visible = false
+   StatusFrame.Visible = false
+   Themes.Visible = false
+end)
 
 TextButton_9.Parent = SideFrame
 TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -709,6 +728,13 @@ TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_9.TextScaled = true
 TextButton_9.TextSize = 14.000
 TextButton_9.TextWrapped = true
+TextButton_9.MouseButton1Down:Connect(function()
+   HomeFrame.Visible = false
+   Credits.Visible = false
+   MainFrame.Visible = true
+   StatusFrame.Visible = false
+   Themes.Visible = false
+end)
 
 TextButton_10.Parent = SideFrame
 TextButton_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -716,12 +742,18 @@ TextButton_10.BackgroundTransparency = 1.000
 TextButton_10.Position = UDim2.new(-0.0126600033, 0, 0.351590067, 0)
 TextButton_10.Size = UDim2.new(0, 123, 0, 51)
 TextButton_10.Font = Enum.Font.SourceSans
-TextButton_10.Text = "Misc"
+TextButton_10.Text = "Status"
 TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_10.TextScaled = true
 TextButton_10.TextSize = 14.000
 TextButton_10.TextWrapped = true
-
+TextButton_10.MouseButton1Down:Connect(function()
+   HomeFrame.Visible = false
+   Credits.Visible = false
+   MainFrame.Visible = false
+   StatusFrame.Visible = true
+   Themes.Visible = false
+end)
 TextButton_11.Parent = SideFrame
 TextButton_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_11.BackgroundTransparency = 1.000
@@ -733,6 +765,13 @@ TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_11.TextScaled = true
 TextButton_11.TextSize = 14.000
 TextButton_11.TextWrapped = true
+TextButton_11.MouseButton1Down:Connect(function()
+   HomeFrame.Visible = false
+   Credits.Visible = true
+   MainFrame.Visible = false
+   StatusFrame.Visible = false
+   Themes.Visible = false
+end)
 
 TextButton_12.Parent = SideFrame
 TextButton_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -745,6 +784,13 @@ TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_12.TextScaled = true
 TextButton_12.TextSize = 14.000
 TextButton_12.TextWrapped = true
+TextButton_12.MouseButton1Down:Connect(function()
+    Themes.Visible = true
+    HomeFrame.Visible = false
+    MainFrame.Visible = false
+    StatusFrame.Visible = false
+    Credits.Visible = false
+end)
 
 TextLabel_26.Parent = NutHUBv2
 TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -900,9 +946,9 @@ user_premium__001.Chatted:connect(function(cht)
     					hummy.Parent.Shirt:Destroy()
 				end)
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = user_premium__001.Character.HumanoidRootPart.CFrame + user_premium__001.Character.HumanoidRootPart.CFrame.lookVector * 0.5
-				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
-				wait(0.1)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 60
+				wait(0.3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -150
 			end
 		end
 	end
